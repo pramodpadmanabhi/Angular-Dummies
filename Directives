@@ -1,1 +1,10 @@
 Angular Directives Links - https://www.freecodecamp.org/news/angular-directives-learn-how-to-use-or-create-custom-directives-in-angular-c9b133c24442/
+
+/* 
+
+---What is an Angular Directive?
+      Directives are the functions which 
+	will execute whenever Angular compiler finds it. Angular Directives enhance the capability of HTML elements by attaching custom behaviors to the DOM.
+
+*/
+
