@@ -6,3 +6,46 @@ Inject Renderer Service into Constructor
 ---
 Constructor(private renderService:renderer2){}
 ---
+
+HostBinding and HostListener
+
+By using the @HostListener and @HostBinding decorators we can both listen to output events from our host element 
+and also bind to input properties on our host element as well.
+
+@HostListener
+This is a function decorator that accepts an event name as an argument. When that event gets fired on the host element it calls the associated function.
+
+Exmaple :
+@HostListener('mouseover') onHover() {
+  window.alert("hover");
+}
+
+Directive :
+import { HostListener,HostBinding } from '@angular/core'
+class CardHoverDirective {
+
+  @HostBinding('class.card-outline-primary') private ishovering: boolean;
+  constructor(private el: ElementRef,
+              private renderer: Renderer) {
+  }
+
+  @HostListener('mouseover') onMouseOver() { (2)
+    let part = this.el.nativeElement.querySelector('.card-text')
+    this.renderer.setElementStyle(part, 'display', 'block'); 
+    this.ishovering = true;
+  }
+  
+    @HostListener('mouseout') onMouseOut() {
+    let part = this.el.nativeElement.querySelector('.card-text');
+    this.renderer.setElementStyle(part, 'display', 'none');
+     this.ishovering = false;
+  }
+}
+
+HTML:
+<div class="card card-block" ccCardHover>
+  <h4 class="card-title">{{data.setup}}</h4>
+  <p class="card-text"
+     [style.display]="'none'">{{data.punchline}}</p> (1)
+  (2)
+</div>
