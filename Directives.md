@@ -17,8 +17,14 @@
     We can also create our own custom Attribute Directives for our desired functionality.
 
 # Structural Directives
-  * Structural Directives are responsible for changing the structure of the DOM. They work by adding or removing the elements from the DOM, unlike Attribute Directives which just      change the element’s appearance and behavior.
-    You can easily differentiate between the Structural and Attribute Directive by looking at the syntax. The Structural Directive’s name always starts with an asterisk(*) prefix,     whereas Attribute Directive does not contain any prefix. The three most popular built-in Structural Directives Angular provides are NgIf, NgFor, and NgSwitch.
+  * Structural Directives are responsible for changing the structure of the DOM. They work by adding or removing the elements from the DOM, unlike Attribute Directives which just change the element’s appearance and behavior.
+    You can easily differentiate between the Structural and Attribute Directive by looking at the syntax. The Structural Directive’s name always starts with an asterisk(*) prefix, whereas Attribute Directive does not contain any prefix. The three most popular built-in Structural Directives Angular provides are NgIf, NgFor, and NgSwitch.
+    
+    ##### Rule
+    * Only one structural directive per host element
     
 # Components  
   * Components are directives with templates. The only difference between Components and the other two types of directives is the Template. Attribute and Structural Directives       don't have Templates. So, we can say that the Component is a cleaner version of the Directive with a template, which is easier to use.
+  
+  ### Commands to create directive
+  * ng generate directive highlight
