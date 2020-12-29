@@ -7,7 +7,7 @@
 
 
 
-#From the core concept, Angular directives are categorized into three categories.
+# From the core concept, Angular directives are categorized into three categories.
   * Attribute Directives
   * Structural Directives
   * Components
