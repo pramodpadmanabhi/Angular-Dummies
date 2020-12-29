@@ -21,10 +21,12 @@
     You can easily differentiate between the Structural and Attribute Directive by looking at the syntax. The Structural Directive’s name always starts with an asterisk(*) prefix, whereas Attribute Directive does not contain any prefix. The three most popular built-in Structural Directives Angular provides are NgIf, NgFor, and NgSwitch.
   * NgIf - This directive adds and removes the host elements from physical DOM
   * The Ngif condition remvoes gost element from DOM, detaches itself from DOM events, detaches component from change dectection cycle and destroys it.The component and DOM nodes can be garbage collected and free up memeory
+  * Why remove rather than hide? refer Docs
+  * asterisk (*) prefix importance
     
     
-    ##### Rule
-    * Only one structural directive per host element
+ ##### Rule
+ * Only one structural directive per host element
     
 # Components  
   * Components are directives with templates. The only difference between Components and the other two types of directives is the Template. Attribute and Structural Directives       don't have Templates. So, we can say that the Component is a cleaner version of the Directive with a template, which is easier to use.
