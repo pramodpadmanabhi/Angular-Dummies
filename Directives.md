@@ -19,6 +19,9 @@
 # Structural Directives
   * Structural Directives are responsible for changing the structure of the DOM. They work by adding or removing the elements from the DOM, unlike Attribute Directives which just change the element’s appearance and behavior.
     You can easily differentiate between the Structural and Attribute Directive by looking at the syntax. The Structural Directive’s name always starts with an asterisk(*) prefix, whereas Attribute Directive does not contain any prefix. The three most popular built-in Structural Directives Angular provides are NgIf, NgFor, and NgSwitch.
+  * NgIf - This directive adds and removes the host elements from physical DOM
+  * The Ngif condition remvoes gost element from DOM, detaches itself from DOM events, detaches component from change dectection cycle and destroys it.The component and DOM nodes can be garbage collected and free up memeory
+    
     
     ##### Rule
     * Only one structural directive per host element
