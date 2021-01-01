@@ -23,6 +23,9 @@
   * The Ngif condition remvoes gost element from DOM, detaches itself from DOM events, detaches component from change dectection cycle and destroys it.The component and DOM nodes can be garbage collected and free up memeory
   * Why remove rather than hide? refer Docs
   * asterisk (*) prefix importance
+  * Template Input Variable / Template Refrence Variable(Scope of the element)
+  * One Structural Directive per host element (Reasons)
+  
     
     
  ##### Rule
